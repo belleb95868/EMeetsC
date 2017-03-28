@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lenovo.emeetsc.LoginFrame">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textSize="36px"
+        android:background="@null"
+        android:textColorHint="@color/lightGrey"
+        android:id="@+id/usernameEdt"
+        android:layout_marginTop="5dp"
+        android:hint="请输入用户名"
+        android:layout_above="@+id/imageView2"
+        android:layout_alignLeft="@+id/nameTxt"
+        android:layout_alignStart="@+id/nameTxt" />
+
+    <TextView
+        android:text="密码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pswTxt"
+        android:textColor="@color/loginGrey"
+        android:layout_centerVertical="true"
+
+        android:layout_alignLeft="@+id/usernameEdt"
+        android:layout_alignStart="@+id/usernameEdt" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:textSize="36px"
+        android:background="@null"
+        android:textColorHint="@color/lightGrey"
+        android:id="@+id/passwordEdt"
+        android:hint="请输入密码"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/pswTxt"
+        android:layout_alignLeft="@+id/pswTxt"
+        android:layout_alignStart="@+id/pswTxt" />
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/line"
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/passwordEdt"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/line"
+        android:id="@+id/imageView2"
+        android:layout_above="@+id/pswTxt"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="用户名"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTxt"
+        android:textColor="@color/loginGrey"
+        android:layout_above="@+id/usernameEdt"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <TextView
+        android:text="确认密码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/querenmima"
+        android:textColor="@color/loginGrey"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignLeft="@+id/usernameEdt"
+        android:layout_alignStart="@+id/usernameEdt" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:textSize="36px"
+        android:background="@null"
+        android:textColorHint="@color/lightGrey"
+        android:id="@+id/querenmimaEdt"
+        android:hint="请确认密码"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/querenmima"
+        android:layout_alignLeft="@+id/pswTxt"
+        android:layout_alignStart="@+id/pswTxt" />
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/line"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/querenmimaEdt"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/logo2"
+        android:id="@+id/imageView"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/usernameEdt"
+        android:layout_alignEnd="@+id/usernameEdt" />
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/zhuce2"
+        android:id="@+id/registerButton"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+
+
+
+</RelativeLayout>

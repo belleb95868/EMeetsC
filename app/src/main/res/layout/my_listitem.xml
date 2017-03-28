@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:id="@+id/nameTxt1"
+        android:layout_marginLeft="15dp"
+        android:layout_alignTop="@+id/touxiang"
+        android:layout_toRightOf="@+id/touxiang"
+        android:textColor="@color/forgetBlue"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:text="time"
+        android:layout_toRightOf="@+id/nameTxt1"
+        android:layout_alignTop="@id/nameTxt1"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/forgetBlue"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textSize="20dip"
+        android:id="@+id/ItemTile"
+        android:text="我是标题"
+        android:layout_below="@+id/nameTxt1"
+        android:layout_marginTop="2dp"
+        android:layout_alignLeft="@+id/nameTxt1"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/ItemText"
+        android:textColor="@color/darkGrey"
+        android:text="我是内容"
+        android:layout_below="@+id/ItemTile"
+        android:layout_toRightOf="@+id/touxiang"
+        android:layout_toEndOf="@+id/touxiang"
+        android:layout_alignLeft="@+id/nameTxt1"
+        android:layout_alignRight="@+id/ItemTile"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="16dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/touxiang"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"/>
+
+    <!--<ImageView-->
+        <!--android:layout_marginTop="11dp"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:id="@+id/touxiang"-->
+        <!--app:srcCompat="@drawable/logo2"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+
+</RelativeLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+    <!--<ImageView-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:id="@+id/touxiang"-->
+    <!--app:srcCompat="@drawable/logo2"-->
+    <!--/>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/MyListItem"-->
+    <!--android:paddingBottom="3dip"-->
+    <!--android:paddingLeft="10dip">-->
+    <!--<TextView-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:id="@+id/ItemTitle"-->
+    <!--android:textSize="20dip"-->
+    <!--android:text="yo"/>-->
+    <!--<TextView-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:id="@+id/ItemText"-->
+    <!--android:text="hu"/>-->
+    <!--</LinearLayout>-->
+
+    <!---->
+    <!--</LinearLayout>-->
