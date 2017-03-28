@@ -4,6 +4,9 @@ import android.app.Activity;
 import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -17,6 +20,7 @@ public class MainFrame extends Activity {
     private ImageView touxiang1;
     private ListView myListView;
     private MyAdapter adapter;
+    private EditText sousuo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +29,28 @@ public class MainFrame extends Activity {
 
         List<forumInfo> forumList = new ArrayList<forumInfo>();
         myListView = (ListView) findViewById(R.id.MyListView);
+        myListView.setTextFilterEnabled(true);  //过滤除了关键字以外的选项
+        sousuo=(EditText)findViewById(R.id.search);
+
+        sousuo.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                MainFrame.this.adapter.getFilter().filter(s);
+
+            }
+        });
+
+
 
         forumList.add(new forumInfo("杨东春", "今天的英语作业是什么？", "求作业！！！！",
                 R.drawable.tx1));
